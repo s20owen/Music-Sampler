@@ -37,10 +37,10 @@ function showData(data) {
     
 }
 ```
-## Main screen
-<img src="/screenshots.png" width="500" height="400">
+## Inital Screen
+<img src="/screenshots/initial screen.png" width="500" height="400">
 
-## Logo imported
+## Search/Results Screen
 
-<img src="/Assets/JPWM2.png" width="500" height="400">
+<img src="/screenshots/Search.png" width="500" height="400">
 
