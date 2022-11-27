@@ -37,10 +37,10 @@ function showData(data) {
     
 }
 ```
-## Inital Screen
-<img src="/screenshots/initial screen.png" width="500" height="400">
+## Inital Screen | Search/Results Screen
+<img src="/screenshots/initial screen.png" width="300" height="500">  <img src="/screenshots/Search.png" width="300" height="500">
 
-## Search/Results Screen
 
-<img src="/screenshots/Search.png" width="500" height="400">
+
+
 
