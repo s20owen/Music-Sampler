@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    
+<head>    
+<meta charset="utf-8">
+<title>EZPassGen</title> 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+<link rel="manifest" href="manifest.json">
+<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no"/>
+<!-- Ios specific -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EZPassGen">
+<link rel="apple-touch-icon" href="img/icons/180.png">
+<link rel="apple-touch-startup-image" href="img/splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="img/splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png">
+    
+
+</head>
+    
+<body class="fullscreen">
+    <div class="container">
+        <nav>
+            <h1>EZPassGen</h1>
+            
+        </nav>
+            
+            <div class="pass-container">
+                <input type=text placeholder="Strong Password" readonly id="pwtext" class="pass-input">
+            </div>
+            
+            <div class="info-container">
+                <div class="info-holder">
+                    <h2 class="header2">Password length:</h2>
+                    <input type=text value="8" readonly selectable="false" class="inpt" id="pwlen">
+                </div>
+                <div class="btn-holder">
+                    <a href="#" class="addButton pad" id="addbtn" onclick="AddNumber()">&plus;</a>
+                    <a href="#" class="subButton" id="subbtn" onclick="SubNumber()">&minus;</a>
+                </div>
+            </div>
+            
+            <div class="gen-area">
+                <a href="#" class="gen-button" id="gen">Generate</a>
+                <a href="#" class="copy-button" id="copy">Copy</a>
+            </div>
+            
+            <div class="check-container">
+                <div class="check-label">
+                    <p>Include Numbers: ( 0 - 9 )</p>
+                    <input type="checkbox" id="number" checked='true' class="check">
+                </div>
+                
+                <div class="check-label">
+                    <p>Include Sybols: ( ! @ # $ ? )</p>
+                    <input type="checkbox"  id="symbol" checked class="check">
+                </div>
+                
+                <div class="check-label">
+                    <p>Include Uppercase: ( A B C D)</p>
+                    <input type="checkbox" id="upper" checked='true' class="check">
+                </div>
+                
+                <div class="check-label">
+                    <p>Include Lowercase: ( a b c d )</p>
+                    <input type="checkbox" id="lower" checked='true' class="check">
+                </div>
+                
+            </div>
+            
+            <div class="disclaimer">
+                <p>Note: This app does not guarantee the security of your password. This app generates random passwords only.</p>
+            </div>
+            
+           
+    </div>       
+            <script src="app.js"></script>
+            <script type="text/javascript" src="main.js"></script>
+    
+</body>
+</html>
